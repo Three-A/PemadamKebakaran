@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yudha.pemadamkebakaran.DetailActivity">
+
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            tools:context = "cpn.co.id.maos.MenuActivity"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/gambarpos">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="#77DCF9"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/nama_pos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        />
+                    <View
+                        android:id="@+id/garis_putih"
+                        android:layout_width="120dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/nama_pos"
+                        android:background="#ffffff"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/alamat_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/garis_putih"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:text="@string/alamat_detail"
+                        android:textColor="#ffffff"
+                        />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/btn_direction"
+                        android:layout_alignBottom="@+id/open_gmaps"
+                        android:layout_toEndOf="@+id/open_gmaps"
+                        android:layout_toRightOf="@+id/open_gmaps"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/placeholder" />
+
+                    <TextView
+                        android:id="@+id/rt_rw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/alamat_detail"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#ffffff"
+                        android:text="@string/rt_rw"
+                        />
+                    <TextView
+                        android:id="@+id/kelurahan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rt_rw"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"
+                        android:textColor="#ffffff"
+                        android:text="@string/kelurahan"
+                        />
+                    <TextView
+                        android:id="@+id/open_gmaps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/kelurahan"
+                        android:layout_marginTop="10dp"
+                        android:text="Open in Your Google Maps App's: "
+                        android:textColor="#ffffff"
+                        />
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

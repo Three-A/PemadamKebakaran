@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PemadamKebakaran</string>
+    <string name="token">gdkxw5tQqgf9YAVv2sS5DmITY//k5jK10BU4opSv7fa+APioqY3gO9s7NQr/cD1X</string>
+    <string name="nama_pos">pos:</string>
+    <string name="alamat_detail">Alamat      : </string>
+    <string name="rt_rw">Rt/Rw        :</string>
+    <string name="kelurahan">Kelurahan :</string>
+    <string name="api_key">AIzaSyDUh2Ez12H6D1_Bf7Ms1FEQ8vJSxz3DQMs</string>
+</resources>
